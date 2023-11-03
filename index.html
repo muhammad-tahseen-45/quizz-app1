@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body onload="nextQuestion()">
+    
+    <div   class="maincontainer  ">
+        <div class="main ">
+            <div class="container    ">
+                <div class="row  ">
+                    <div class="col  ">
+                        <p class="me-3"><i style="color: beige;" class="fa-solid fa-clock-rotate-left"></i></p>
+                        <p id="timer" style="color: white; text-align: center; font-size: 30px"> </p>
+
+                    </div>
+                </div>
+
+                <div class="row mb-2   ">
+                    <div class="col    ">
+
+                        <h4 class="text-light" id="para"></h4>
+                    </div>
+                </div>
+
+
+
+                <div class="row mb-2 ">
+                    <div class="col">
+                        <input onclick="clicked()" value="1" name="options" type="radio">
+                        <label class="ms-3  p-1" id="opt1"></label>
+
+                    </div>
+                </div>
+
+                <div class="row mb-2  ">
+                    <div class="col ">
+                        <input onclick="clicked()" value="2" name="options" type="radio">
+                        <label class="ms-3 p-1" id="opt2"></label>
+                    </div>
+                </div>
+
+                <div class="row mb-2   ">
+                    <div class="col  ">
+
+                        <input onclick="clicked()" value="3" name="options" type="radio">
+                        <label class="ms-3 p-1" id="opt3"></label>
+                    </div>
+                </div>
+                <div class="row mb-2  ">
+                    <div class="col  ">
+
+
+
+                        <button type="button" class="btn btn-outline-info ms-3 " id="btn"
+                            onclick="nextQuestion()">next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button type="button" class="btn btn-dark">Dark</button> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
